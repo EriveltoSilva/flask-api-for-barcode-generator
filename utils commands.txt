@@ -1,0 +1,21 @@
+1º: pip install pylint
+2º: pylint --generate-rcfile > .pylintrc
+3º: pip install pre-commit
+4ª: touch .pre-commit-config.yaml
+5º: paste de following text to file: .pre-commit-config.yaml 
+repos:
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args:
+          [
+            "-rn",
+            "-sn",
+            "--rcfile=.pylintrc",
+            "--load-plugins=pylint.extensions.docparams",
+          ]
+6º: pre-commit install

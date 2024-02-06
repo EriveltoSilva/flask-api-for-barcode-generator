@@ -12,9 +12,5 @@ class TagCreatorView:
         body = http_request.body
         product_code = body["product_code"]
         response = tag_creator_controller.create(product_code)
-
-        #business logic
-        print("In the view")
-
         
         return HttpResponse(status_code=200, body=response)

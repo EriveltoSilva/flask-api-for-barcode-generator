@@ -1,6 +1,5 @@
 from flask import Blueprint, request, jsonify
 from src.views.http_types.http_resquest import HttpRequest
-# from src.views.http_types.http_response import HttpResponse
 from src.views.tag_creator_view import TagCreatorView
 
 

@@ -1,5 +1,6 @@
 1º: pip install pylint
 2º: pylint --generate-rcfile > .pylintrc
+  2.1º: Em caso de erro tentar com: pylint --generate-rcfile | out-file -encoding utf8 .pylintrc 
 3º: pip install pre-commit
 4ª: touch .pre-commit-config.yaml
 5º: paste de following text to file: .pre-commit-config.yaml 
